@@ -23,8 +23,8 @@ function randomNum(minNum,maxNum){
     } 
 }
 var EasyCopy={
-create:function (divid){
-var uid=rand_str(100),div=document.getElementById(divid);
+create:function (divid,rand_l=100){
+var uid=rand_str(rand_l),div=document.getElementById(divid);
 div.innerHTML="<textarea id='"+uid+"'></textarea>";
 document.getElementById(uid).style.display="none"
 return {id:uid,div:divid,copy:function (file){

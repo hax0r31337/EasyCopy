@@ -20,6 +20,11 @@ js
 ~~~
 var goingcopy=EasyCopy.create("test")
 ~~~
+或者
+~~~
+var goingcopy=EasyCopy.create("test",1000)
+~~~
+1000是随机textarea_id的长度(无特殊需要不建议更改，默认100)
 原理：创建隐藏textarea在调用copy时进行复制
 ## 复制
 需要先创建后才可复制
@@ -60,6 +65,11 @@ js
 ~~~
 var goingcopy=EasyCopy.create("test")
 ~~~
+or
+~~~
+var goingcopy=EasyCopy.create("test",1000)
+~~~
+1000 is length of the random textarea_id(Not recommended to modify，default 100)
 Create an invisable textarea used to copies text to clipboard
 ## Copy text to Clipboard
 Copy need to create first
