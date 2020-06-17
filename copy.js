@@ -36,5 +36,11 @@ document.execCommand("Copy");
 Url2.innerHTML="";
 Url2.style.display="none"
 }}
+},
+autocreate:function(inid,addf=false,divl=100,rand_l=100){
+    var div=document.getElementById(inid),ran=rand_str(divl)
+    if(addf){div.innerHTML="<div id=\""+ran+"\"></div>"+div.innerHTML}
+    else{div.innerHTML=div.innerHTML+"<div id=\""+ran+"\"></div>"}
+    return EasyCopy.create(ran,rand_l)
 }
 }
